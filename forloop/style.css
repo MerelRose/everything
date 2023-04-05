@@ -1,0 +1,21 @@
+#teller
+{
+    width:290px;
+}
+
+.tabel
+{
+    float:right;
+    border: solid blue 2px;
+    width:400px;
+}
+
+.tabel-rij:nth-child(odd)
+{
+    background-color:wheat;
+}
+
+.tabel-rij:nth-child(even)
+{
+    background-color:whitesmoke;
+}
