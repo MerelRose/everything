@@ -1,0 +1,13 @@
+table{
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddddd;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Axios test</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>750 Belgische biertjes</h1>
+    <div id="bier_div">
+        Hier komen de biertjes
+    </div>
+    <script src="script.js"></script>
+    <script>
+        axios.get('https://15euros.nl/api/bier_basic.php')
+            .then(function (response)  {
+                let biertjes = response.data;
+                console.log(biertjes);
+
+                let htm = "<h1>Biertjes:</h1><table>";
+                    htm += "<tr>";
+                    htm += "<th>nr</th>";
+                    htm += "<th>naam</th>";
+                    htm += "<th>brouwer</th>";
+                    htm += "<th>perc.</th>";
+                    htm += "<th>gisting</th>";
+                    htm += "<th>prijs</th>";
+                    htm += "</tr>";
+                biertjes.forEach(function (biertje, index) {
+                    htm += "<tr>";
+                    htm += "<td>" + (index + 1) + "</td>";
+                    htm += "<td>" + biertje.naam +"</td>";
+                    htm += "<td>" + biertje.brouwer +"</td>";
+                    htm += "<td>" + biertje.perc + "</td>";
+                    htm += "<td>" + biertje.gisting + "</td>";
+                    htm += "<td>" + biertje.inkoop_prijs + "</td>";
+                    htm += "</tr>";
+                });
+
+                htm += "</table>";
+
+                document.getElementById("bier_div").innerHTML = htm;
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
+    </script>
+</body>
+</html>

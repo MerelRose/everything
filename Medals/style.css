@@ -1,0 +1,137 @@
+body {
+  margin: 0px;
+}
+
+.logo{
+  margin-left: 35%;
+}
+
+.webName{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: larger;
+}
+
+.name{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  color: grey;
+  margin-top: auto;
+  margin-bottom: 50%;
+}
+
+.start{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+.madeBy{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  color: grey;
+  margin-top: 10%;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed; 
+  overflow-x: hidden;
+  padding-top: 40px;
+  border-right: groove;
+  background-color: white;
+}
+
+/* Style sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn { 
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: medium;
+  text-decoration: none;
+  color: #515151;
+  display: block;
+  border: none;
+  background: none;
+  text-align: center;
+  cursor: grab;
+}
+
+/*hover over mouse*/
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #878787;
+}
+
+.active {
+  color: #666666;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.main {
+  margin-left: 15%;
+  position: fixed;
+}
+
+.mainText{
+  position: absolute;
+  margin-left: 15px;
+  color: rgb(255, 255, 255);
+  font-family: Imprint MT Shadow;
+  font-size: 90px;
+}
+
+.beschrijving{
+  position: absolute;
+  margin-left: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  width: 900px;
+  margin-top: 200px;
+}
+
+
+.line{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 11px;
+  text-align: center;
+  color: #878787;
+}
+
+.sro{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  text-align: center;
+  color: #878787;
+}
+
+.mr{
+  font-family: 'Courier New', Courier, monospace;
+  color: #878787;
+  font-size: 11px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.end{
+  margin-bottom: auto;
+}
